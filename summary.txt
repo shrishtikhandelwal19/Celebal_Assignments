@@ -6,4 +6,5 @@ Data Cleaning and Exploration Summary
 4. Removed duplicate records.
 5. Performed filtering and column selection operations.
 6. Created a derived column named total_amount.
-7. Saved the cleaned dataset as a new CSV file.
+7. Saved the cleaned dataset as a new CSV file
+
