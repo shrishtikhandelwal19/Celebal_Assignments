@@ -130,13 +130,6 @@ AND TABLE_SCHEMA = DATABASE();
 -- MySQL will show an ERROR: Duplicate entry 'xxx@email.com' for key 'email'
 -- The INSERT will FAIL and the row will NOT be added.
 
--- EXAMPLE OF FAILED INSERT:
--- INSERT INTO customers VALUES 
--- (109, 'NewPerson', 'LastName', 'aarav.s@email.com', 'Delhi', 'Delhi', '2024-09-01', FALSE);
--- ^ This would FAIL because 'aarav.s@email.com' already exists for Aarav Sharma (customer_id 101)
-
--- ============================================================================
-
 -- Q6. Try inserting a product with unit_price = -50. What happens and which constraint prevents it?
 
 -- Explanation:
@@ -214,10 +207,6 @@ WHERE order_date BETWEEN '2024-08-10' AND '2024-08-20';
 -- INDEX-FRIENDLY QUERY (SARGABLE):
 SELECT * FROM customers 
 WHERE join_date >= '2024-01-01' AND join_date <= '2024-12-31';
-
--- Or even simpler:
-SELECT * FROM customers 
-WHERE join_date BETWEEN '2024-01-01' AND '2024-12-31';
 
 -- Q13. Count the total number of orders in the orders table.
 SELECT COUNT(*) AS total_orders 
@@ -317,10 +306,6 @@ ON c.customer_id = o.customer_id;
 -- 3. order_items.product_id → products.product_id
 --    (Each item must refer to an existing product)
 
--- WHAT IS A FOREIGN KEY:
--- A Foreign Key is a column in one table that refers to the Primary Key of another table.
--- It enforces REFERENTIAL INTEGRITY: You can't have invalid relationships.
-
 -- WHAT HAPPENS IF YOU TRY TO INSERT AN ORDER WITH CUSTOMER_ID = 999:
 -- INSERT INTO orders VALUES (1011, 999, '2024-08-30', 'Pending', 1500.00);
 -- ERROR: Cannot add or update a child row: a foreign key constraint fails
@@ -409,7 +394,7 @@ UPDATE products
 SET stock_qty = stock_qty - 1 
 WHERE product_id = 207;
 
--- Step 3: Update stock for Cushion Covers (product_id 208): reduce by 1
+-- Step 4: Update stock for Cushion Covers (product_id 208): reduce by 1
 UPDATE products 
 SET stock_qty = stock_qty - 1 
 WHERE product_id = 208;
@@ -419,28 +404,3 @@ COMMIT;
 
 -- IF ANY ERROR OCCURRED, YOU WOULD DO:
 -- ROLLBACK;
-
--- Explanation of the Transaction:
-
--- START TRANSACTION; - Begins a transaction. All following statements are grouped together.
--- 
--- INSERT INTO orders - Adds a new order. If this fails (e.g., duplicate order_id), the entire transaction fails.
---
--- INSERT INTO order_items (2 times) - Adds 2 items to the order. These must exist or the order is incomplete.
---
--- UPDATE products (2 times) - Reduces stock for the products that were ordered.
---   This is important: if stock drops below 0, the UPDATE will fail (we don't have enough stock).
---
--- COMMIT; - Saves all changes permanently. If we reach this line, everything was successful.
---
--- If ANY statement fails, you would execute ROLLBACK; instead of COMMIT;
--- ROLLBACK undoes ALL changes from this transaction, even those that succeeded.
--- So if product update fails, the order and items are also undone. No partial updates!
-
--- KEY POINTS:
--- 1. All-or-Nothing: Either all 5 statements succeed and COMMIT, or all fail and ROLLBACK.
--- 2. Atomicity: You cannot have an order without items, or items without updating stock.
--- 3. CURDATE() = Today's date function (automatically gets the current date).
--- 4. stock_qty - 1 = Decrease stock by the quantity ordered.
--- 5. If stock_qty becomes negative, the UPDATE will fail due to CHECK constraint.
-
