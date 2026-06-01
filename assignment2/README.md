@@ -19,12 +19,12 @@ assignment2/
 ├── README.md                    # Project documentation
 ├── Brief_Report.txt             # Summary of findings and analysis
 ├── brief.txt                    # Project brief/requirements
-├── kaggle queries/
-│   │   └── Sample - Superstore.csv
-│   │   └── queries on kaggle.sql
-│   └── screenshots/
-└── task queries
-    │   └── task queries.sql
+├── SQL script/
+│      └── Sample - Superstore.csv
+│      └── kaggle script.sql
+|      |__task script.sql
+└── query result
+    │   
     └── screenshots/
 ```
 
