@@ -1,0 +1,111 @@
+Query results for required Superstore tasks (sample output)
+
+1. Orders with sales greater than average:
+CA-2014-145317, SM-20320, 22638.48
+CA-2016-118689, TC-20980, 17499.95
+CA-2017-140151, RB-19360, 13999.96
+CA-2017-127180, TA-21385, 11199.968
+CA-2017-166709, HL-15040, 10499.97
+
+2. Highest sales order for each customer (first 5 rows):
+AA-10315, CA-2016-103982, 3930.072
+AA-10375, CA-2016-131065, 499.98
+AA-10480, CA-2016-114601, 479.97
+AA-10645, CA-2015-110863, 1323.9
+AB-10015, CA-2016-140935, 341.96
+
+3. Total sales for each customer (top 5):
+SM-20320, 25043.05
+TC-20980, 19052.218
+RB-19360, 15117.339
+TA-21385, 14595.62
+AB-10105, 14473.571
+
+4. Customers with above-average total sales (first 5):
+SM-20320, 25043.05
+TC-20980, 19052.218
+RB-19360, 15117.339
+TA-21385, 14595.62
+AB-10105, 14473.571
+
+5. Rank all customers by total sales (top 5):
+SM-20320, 25043.05, rank 1
+TC-20980, 19052.218, rank 2
+RB-19360, 15117.339, rank 3
+TA-21385, 14595.62, rank 4
+AB-10105, 14473.571, rank 5
+
+6. Row numbers for each order within customer (first 10 rows):
+AA-10315, CA-2015-121391, 26.96, order_number 1
+AA-10315, CA-2016-103982, 3930.072, order_number 2
+AA-10315, CA-2016-103982, 2.304, order_number 3
+AA-10315, CA-2016-103982, 431.976, order_number 4
+AA-10315, CA-2016-103982, 41.72, order_number 5
+AA-10315, CA-2014-128055, 673.568, order_number 6
+AA-10315, CA-2014-128055, 52.98, order_number 7
+AA-10315, CA-2017-147039, 362.94, order_number 8
+AA-10315, CA-2017-147039, 11.54, order_number 9
+AA-10315, CA-2014-138100, 14.94, order_number 10
+
+7. Top 3 customers by total sales:
+SM-20320, 25043.05
+TC-20980, 19052.218
+RB-19360, 15117.339
+
+Final combined query (top 5 result):
+Sean Miller, 25043.05, rank 1
+Tamara Chand, 19052.218, rank 2
+Raymond Buch, 15117.339, rank 3
+Tom Ashbrook, 14595.62, rank 4
+Adrian Barton, 14473.571, rank 5
+
+Mini project answers:
+Top 5 customers:
+SM-20320, 25043.05
+TC-20980, 19052.218
+RB-19360, 15117.339
+TA-21385, 14595.62
+AB-10105, 14473.571
+
+Bottom 5 customers:
+TS-21085, 4.833
+LD-16855, 5.304
+CJ-11875, 16.52
+MG-18205, 16.739
+RS-19870, 22.328
+
+Customers with only one order:
+AO-10810, 1, 161.28
+AR-10570, 1, 88.15
+CJ-11875, 1, 16.52
+JC-15385, 1, 1058.108
+JR-15700, 1, 863.88
+LD-16855, 1, 5.304
+MG-18205, 1, 16.739
+PH-18790, 1, 729.648
+RE-19405, 1, 48.36
+RM-19750, 1, 98.35
+
+Customers above-average total sales:
+SM-20320, 25043.05
+TC-20980, 19052.218
+RB-19360, 15117.339
+TA-21385, 14595.62
+AB-10105, 14473.571
+KL-16645, 14175.229
+SC-20095, 14142.334
+HL-15040, 12873.298
+SE-20110, 12209.438
+CC-12370, 12129.072
+
+Highest order value per customer (first 10):
+AA-10315, 3930.072
+AA-10375, 499.98
+AA-10480, 479.97
+AA-10645, 1323.9
+AB-10015, 341.96
+AB-10060, 4355.168
+AB-10105, 9892.74
+AB-10150, 479.97
+AB-10165, 304.23
+AB-10255, 479.984

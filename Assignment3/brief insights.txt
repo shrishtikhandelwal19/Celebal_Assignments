@@ -1,0 +1,24 @@
+1. Load raw data into `superstore_raw` with `LOAD DATA LOCAL INFILE`.
+2. Create normalized tables from the raw data: `customers`, `products`, `orders`, and `order_items`.
+3. Use subqueries to find order rows and orders with sales above the average sale amount.
+4. Use CTEs to compute total sales per customer and identify customers with above-average total sales.
+5. Use window functions such as `RANK()` and `ROW_NUMBER()` to rank customers and number orders within each customer.
+6. Use joins and CTEs to produce final leaderboards combining customer names, total sales, and rank.
+
+Business questions answered:
+- top 10 customers by total sales
+- bottom 10 customers by total sales
+- customers with only one order
+- customers whose total sales are above the average
+- customers with the highest single-order value
+- customer rank by total sales
+
+Brief insights:
+- The Superstore file focuses on sales performance, customer ranking, and order-level signal using advanced SQL patterns.
+- The Task file captures the same business story with sample outputs: top/bottom customer lists, one-order customers, above-average customers, and final ranked leaderboards.
+- Above-average sales rows show the strongest individual line items and highlight high-impact orders.
+- Highest order totals per customer reveal their biggest purchase and highest value accounts.
+- Customer totals and ranking compare performance across all customers, exposing top performers and revenue contributors.
+- Single-order customers are important retention targets and may need extra attention for repeat business.
+- Top 10 and bottom 10 customer lists identify the best and weakest revenue sources.
+- Above-average customers are strong value drivers, and the ranked results validate customer priority for sales strategy.

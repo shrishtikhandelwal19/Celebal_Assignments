@@ -1,0 +1,77 @@
+Superstore assignment query results (sample output)
+
+1. Orders above average sales (first 5 rows):
+CA-2016-152156, CG-12520, 261.96
+CA-2016-152156, CG-12520, 731.94
+US-2015-108966, SO-20335, 957.5775
+CA-2014-115812, BH-11710, 907.152
+CA-2014-115812, BH-11710, 1706.184
+
+2. Highest order total per customer (first 5 rows):
+AA-10315, CA-2016-103982, 4406.072
+AA-10375, CA-2016-131065, 513.52
+AA-10480, CA-2016-114601, 1157.98
+AA-10645, CA-2015-110863, 1971.46
+AB-10015, CA-2016-140935, 563.94
+
+3. Total sales per customer (top 5 by total_sales):
+SM-20320, 25043.05, quantity 50, profit -1980.74
+TC-20980, 19052.22, quantity 42, profit 8981.32
+RB-19360, 15117.34, quantity 71, profit 6976.10
+TA-21385, 14595.62, quantity 36, profit 4703.79
+AB-10105, 14473.57, quantity 73, profit 5444.81
+
+4. Ranked customers by sales (top 5):
+SM-20320, 25043.05, rank 1
+TC-20980, 19052.22, rank 2
+RB-19360, 15117.34, rank 3
+TA-21385, 14595.62, rank 4
+AB-10105, 14473.57, rank 5
+
+5. Top 10 customers by sales:
+SM-20320, 25043.05
+TC-20980, 19052.22
+RB-19360, 15117.34
+TA-21385, 14595.62
+AB-10105, 14473.57
+KL-16645, 14175.23
+SC-20095, 14142.33
+HL-15040, 12873.30
+SE-20110, 12209.44
+CC-12370, 12129.07
+
+6. Bottom 10 customers by sales:
+TS-21085, 4.833
+LD-16855, 5.304
+CJ-11875, 16.52
+MG-18205, 16.739
+RS-19870, 22.328
+SG-20890, 47.946
+RE-19405, 48.36
+LB-16735, 50.188
+AS-10135, 58.82
+JC-15340, 71.263
+
+7. Single-order customers (first 10):
+AO-10810, 1 order, total 161.28
+AR-10570, 1 order, total 88.15
+CJ-11875, 1 order, total 16.52
+JC-15385, 1 order, total 1058.108
+JR-15700, 1 order, total 863.88
+LD-16855, 1 order, total 5.304
+MG-18205, 1 order, total 16.739
+PH-18790, 1 order, total 729.648
+RE-19405, 1 order, total 48.36
+RM-19750, 1 order, total 98.35
+
+8. Customers above average total sales (top 10):
+SM-20320, 25043.05
+TC-20980, 19052.22
+RB-19360, 15117.34
+TA-21385, 14595.62
+AB-10105, 14473.57
+KL-16645, 14175.23
+SC-20095, 14142.33
+HL-15040, 12873.30
+SE-20110, 12209.44
+CC-12370, 12129.07

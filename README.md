@@ -52,6 +52,17 @@ Celebal_Assignments/
 │       └── screenshots/
 │           └── (Query result screenshots and analysis)
 │
+├── Assignment3/
+│   ├── README.md                           # Assignment-specific documentation
+│   ├── brief insights.txt                  # Business insights and analysis summary
+│   ├── sql_script/
+│   │   ├── superstore_assignment_queries.sql
+│   │   ├── task_queries.sql
+│   │   └── superstore_raw.csv
+│   └── query results/
+│       ├── superstore_assignment_results.txt
+│       └── task_results.txt
+│
 └── README.md                               # Main repository documentation (this file)
 ```
 
@@ -106,6 +117,37 @@ Celebal_Assignments/
 
 ---
 
+## 🧾 Assignment 3: Advanced SQL Customer Ranking
+
+**Objective**: Analyze Superstore sales performance by building a normalized SQL dataset and applying advanced query techniques to identify top customers, customer rankings, and revenue insights.
+
+**Dataset**: Superstore sales dataset loaded from `superstore_raw.csv`.
+
+**Key Deliverables**:
+- ✅ SQL scripts using subqueries, CTEs, and window functions
+- ✅ Normalized tables for customers, orders, products, and order items
+- ✅ Business-focused ranking and customer segmentation analysis
+- ✅ Output files capturing query results and insights
+- ✅ Assignment-level documentation
+
+**SQL Concepts Used**:
+- **Subqueries** for nested filtering and business-rule derivation
+- **CTEs** to structure intermediate calculations and make queries readable
+- **Window Functions** such as `RANK()` and `ROW_NUMBER()` for ranking and sequencing
+- **JOINs** for combining customer, order, and product datasets
+- **Aggregations** for computing totals, averages, and order counts
+
+**Files Included**:
+- `Assignment3/README.md` - Assignment-specific documentation
+- `Assignment3/brief insights.txt` - Analysis summary and insights
+- `Assignment3/sql_script/superstore_assignment_queries.sql`
+- `Assignment3/sql_script/task_queries.sql`
+- `Assignment3/sql_script/superstore_raw.csv`
+- `Assignment3/query results/superstore_assignment_results.txt`
+- `Assignment3/query results/task_results.txt`
+
+---
+
 ## 🛠️ Tools & Technologies Used
 
 ### SQL
@@ -157,6 +199,8 @@ Celebal_Assignments/
   - LEFT JOIN for preserving left table data
   - RIGHT JOIN for preserving right table data
 - **Subqueries**: Nested queries for complex analysis
+- **CTEs**: Common Table Expressions for reusable intermediate result sets
+- **Window Functions**: Ranking and row-sequencing using functions like `RANK()` and `ROW_NUMBER()`
 - **Data Validation**: Ensuring data accuracy and consistency
 - **Query Optimization**: Writing efficient SQL statements for performance
 
