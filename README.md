@@ -31,14 +31,14 @@ Each assignment includes complete source code, cleaned datasets, SQL scripts, de
 ```
 Celebal_Assignments/
 │
-├── assignment1/
+├── Assignment1/
 │   ├── code.ipynb                          # Jupyter notebook with data analysis code
 │   ├── Combined_dataset.csv                # Combined dataset from multiple sources
 │   ├── final_cleaned_dataset.csv           # Cleaned and processed dataset
 │   ├── summary.txt                         # Summary of findings and insights
 │   └── README.md                           # Assignment-specific documentation
 │
-├── assignment2/
+├── Assignment2/
 │   ├── Brief_Report.txt                    # Executive summary of SQL analysis
 │   ├── README.md                           # Assignment-specific documentation
 │   │
@@ -273,47 +273,6 @@ Celebal_Assignments/
 - Index optimization for query performance
 - Table relationships and dependency management
 
----
-
-## 🚀 How to Use This Repository
-
-### Clone the Repository
-```bash
-git clone https://github.com/shrishtikhandelwal19/Celebal_Assignments.git
-cd Celebal_Assignments
-```
-
-### Explore Assignment 1
-```bash
-cd assignment1/
-
-# View the Jupyter Notebook
-jupyter notebook code.ipynb
-
-# Examine the cleaned dataset
-head final_cleaned_dataset.csv
-```
-
-### Explore Assignment 2
-```bash
-cd assignment2/
-
-# View SQL queries
-cat "kaggle queries/queries on kaggle.sql"
-cat "task queries/task queries.sql"
-
-# Review the brief report
-cat Brief_Report.txt
-```
-
-### Viewing Results
-- SQL query screenshots: Check `assignment2/kaggle queries/screenshots/` and `assignment2/task queries/screenshots/`
-- Detailed findings: Read `assignment2/Brief_Report.txt`
-- Data insights: Review `assignment1/summary.txt`
-- Analysis workflow: Examine `assignment1/code.ipynb`
-
----
-
 ## 📖 Conclusion
 
 This repository demonstrates comprehensive learning and practical application of data analysis and SQL query development during the Celebal Technologies internship. The assignments collectively showcase:
@@ -323,16 +282,6 @@ The included datasets, SQL scripts, Jupyter notebooks, screenshots, and reports 
 - SQL analysis and database query optimization
 - Business metrics calculation and analysis
 - Professional reporting and documentation
-
----
-
-## 📞 Contact & Links
-
-- **GitHub Profile**: [shrishtikhandelwal19](https://github.com/shrishtikhandelwal19)
-- **Repository**: [Celebal_Assignments](https://github.com/shrishtikhandelwal19/Celebal_Assignments)
-- **Organization**: Celebal Technologies
-
----
 
 **Last Updated**: May 31, 2026  
 **Status**: Active & Maintained  

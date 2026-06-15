@@ -36,11 +36,6 @@ Azure Blob Storage → Azure Data Factory → Destination Container
 6. Build a pipeline using metadata validation and a copy activity.
 7. Publish the pipeline and run a debug or trigger execution.
 
-## Metadata Validation Process
-- Used Azure Data Factory's **Get Metadata** activity to inspect source files.
-- Verified file properties such as name, size, and existence.
-- Applied conditional checks to ensure source data met validation rules before copying.
-- Prevented invalid or incomplete files from moving to the destination container.
 
 ## Pipeline Execution Details
 - Pipeline was executed in Azure Data Factory using the debug and trigger workflows.
@@ -60,12 +55,6 @@ Screenshots include:
 - Get Metadata activity configuration
 - Pipeline execution and monitoring
 - Destination container data validation
-
-## Expected Output
-- Validated source metadata with all required file properties confirmed.
-- Successful copy of validated data from source container to destination container.
-- Pipeline execution completed without errors.
-- Azure Data Factory monitoring showed a successful pipeline run.
 
 ## Conclusion
 This assignment demonstrates end-to-end Azure data orchestration with metadata-driven validation. It highlights practical use of Azure Blob Storage, Azure Data Factory, and IAM role configuration to build a secure and reliable data pipeline.
