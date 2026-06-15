@@ -12,7 +12,7 @@ This repository showcases practical data analysis and business intelligence skil
 - **SQL Expertise**: Writing complex queries for data extraction and analysis
 - **Database Management**: Working with normalized database structures
 
-Each assignment includes complete source code, cleaned datasets, SQL scripts, detailed reports, and visual documentation through screenshots.
+Each assignment includes complete source code, cleaned datasets, SQL scripts, detailed reports, and visual documentation through screenshots. Assignment 4 additionally includes Azure Data Factory implementation with metadata validation and cloud pipeline documentation.
 
 ---
 
@@ -62,6 +62,13 @@ Celebal_Assignments/
 │   └── query results/
 │       ├── superstore_assignment_results.txt
 │       └── task_results.txt
+│
+├── Assignment4/
+│   ├── README.md                           # Azure Data Factory assignment documentation
+│   ├── SUMMARY.md                          # Assignment 4 project summary
+│   ├── mini project screenshots/           # Implementation screenshots
+│   ├── objective screesnhots/              # Objective and architecture screenshots
+│   └── Task screenshots/                   # Pipeline execution and validation screenshots
 │
 └── README.md                               # Main repository documentation (this file)
 ```
@@ -148,14 +155,48 @@ Celebal_Assignments/
 
 ---
 
-## 🛠️ Tools & Technologies Used
+## � Assignment 4: Azure Data Factory & Metadata Validation
+
+**Objective**: Build an Azure Data Factory pipeline that performs metadata validation and moves data from an Azure Blob Storage source container to a destination container.
+
+**Key Deliverables**:
+- ✅ Azure Data Factory pipeline with metadata validation
+- ✅ Source and destination Azure Blob Storage configuration
+- ✅ IAM role configuration for secure access
+- ✅ Pipeline execution and monitoring documentation
+- ✅ Assignment-specific README and summary files
+
+**Technologies Used**:
+- Microsoft Azure
+- Azure Blob Storage
+- Azure Data Factory
+- IAM (Reader and Contributor roles)
+- Metadata Validation
+
+**Files Included**:
+- `Assignment4/README.md` - Assignment-specific documentation
+- `Assignment4/SUMMARY.md` - Project summary and outcome
+- `Assignment4/mini project screenshots/` - Visual implementation references
+- `Assignment4/objective screesnhots/` - Architecture and objective screenshots
+- `Assignment4/Task screenshots/` - Pipeline execution and monitoring screenshots
+
+---
+
+## �🛠️ Tools & Technologies Used
+
+### Azure Cloud Services
+- Microsoft Azure for cloud orchestration
+- Azure Blob Storage for source and destination containers
+- Azure Data Factory for pipeline orchestration and metadata validation
+- Azure IAM roles including Reader and Contributor access
+- Metadata Validation workflows for file integrity checks
 
 ### SQL
 - Structured Query Language (SQL) for database operations
 - Complex SELECT statements with WHERE, GROUP BY, HAVING, ORDER BY clauses
 - AGGREGATE functions: SUM(), COUNT(), AVG(), MAX(), MIN()
 - JOINs: INNER, LEFT, RIGHT joins for combining tables
-- Subqueries and nested queries for advanced analysiss
+- Subqueries and nested queries for advanced analyses
 
 ### MySQL Workbench
 - Database management and administration
