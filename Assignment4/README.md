@@ -21,12 +21,6 @@ Azure Blob Storage → Azure Data Factory → Destination Container
 - Azure Data Factory orchestrates data movement and metadata validation.
 - Destination container receives validated output data.
 
-## IAM Roles and Access Configuration
-- Assigned IAM roles to secure resources and limit privileges.
-- Used **Reader** access for monitoring resources and metadata inspection.
-- Used **Contributor** access for Data Factory, Storage Account, and pipeline deployment.
-- Validated access through Azure Portal and linked service credential configuration.
-
 ## Implementation Steps
 1. Create an Azure Resource Group to organize resources.
 2. Provision an Azure Storage Account and create source and destination blob containers.
@@ -35,7 +29,6 @@ Azure Blob Storage → Azure Data Factory → Destination Container
 5. Create datasets for the source container and destination container.
 6. Build a pipeline using metadata validation and a copy activity.
 7. Publish the pipeline and run a debug or trigger execution.
-
 
 ## Pipeline Execution Details
 - Pipeline was executed in Azure Data Factory using the debug and trigger workflows.
