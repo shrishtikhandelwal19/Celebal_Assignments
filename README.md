@@ -9,6 +9,7 @@ A comprehensive collection of data analysis and SQL query assignments completed 
 This repository showcases practical data analysis and business intelligence skills developed during the internship. The assignments focus on:
 
 - **Data Analysis & Cleaning**: Processing and preprocessing real-world datasets
+- **Spark Processing**: Building a data pipeline using PySpark
 - **SQL Expertise**: Writing complex queries for data extraction and analysis
 - **Database Management**: Working with normalized database structures
 
@@ -70,6 +71,14 @@ Celebal_Assignments/
 │   ├── objective screesnhots/              # Objective and architecture screenshots
 │   └── Task screenshots/                   # Pipeline execution and validation screenshots
 │
+├── Assignment-5/
+│   ├── README.md                           # Spark assignment documentation
+│   ├── data/
+│   │   └── sample-superstore.csv           # Superstore dataset for Spark processing
+│   ├── notebook/
+│   │   └── spark_basics.ipynb              # PySpark notebook for data processing
+│   └── output/
+│       └── results.csv                     # Processed output data
 └── README.md                               # Main repository documentation (this file)
 ```
 
@@ -179,6 +188,27 @@ Celebal_Assignments/
 - `Assignment4/mini project screenshots/` - Visual implementation references
 - `Assignment4/objective screesnhots/` - Architecture and objective screenshots
 - `Assignment4/Task screenshots/` - Pipeline execution and monitoring screenshots
+
+---
+
+## 🚀 Assignment 5: Spark Data Processing
+
+**Objective**: Use PySpark to process the Superstore dataset and build a simple data pipeline.
+
+**Key Topics**:
+- Spark Fundamentals
+- Data Cleaning
+- Filtering
+- Aggregations
+- GroupBy Operations
+- Schema Modifications
+- Data Processing Pipeline
+
+**Files Included**:
+- `Assignment-5/README.md`
+- `Assignment-5/data/sample-superstore.csv`
+- `Assignment-5/notebook/spark_basics.ipynb`
+- `Assignment-5/output/results.csv`
 
 ---
 
