@@ -79,6 +79,15 @@ Celebal_Assignments/
 │   │   └── spark_basics.ipynb              # PySpark notebook for data processing
 │   └── output/
 │       └── results.csv                     # Processed output data
+├── Assignment-6/
+│   ├── README.md                           # Assignment-specific documentation
+│   ├── sample-superstore.csv               # Superstore dataset for Spark processing
+│   ├── spark codes/
+│   │   └── pyspark codes.ipynb             # PySpark notebook for Spark-based processing
+│   ├── output_csv/
+│   │   └── part-00000-c42043bd-49e9-4b80-b04c-e2fe9337cb2f-c000.csv
+│   └── output_parquet/
+│       └── part-00000-387e06a4-cf9c-4165-974d-15b59ed0d468-c000.snappy.parquet
 └── README.md                               # Main repository documentation (this file)
 ```
 
@@ -209,6 +218,25 @@ Celebal_Assignments/
 - `Assignment-5/data/sample-superstore.csv`
 - `Assignment-5/notebook/spark_basics.ipynb`
 - `Assignment-5/output/results.csv`
+
+---
+
+## 🚀 Assignment 6: Spark Data Processing and Output Generation
+
+**Objective**: Build and run a PySpark pipeline to process the Superstore dataset, generate clean output files, and explore the data using Spark notebooks.
+
+**Key Deliverables**:
+- ✅ `Assignment-6/README.md`
+- ✅ `Assignment-6/sample-superstore.csv`
+- ✅ `Assignment-6/spark codes/pyspark codes.ipynb`
+- ✅ `Assignment-6/output_csv/part-00000-c42043bd-49e9-4b80-b04c-e2fe9337cb2f-c000.csv`
+- ✅ `Assignment-6/output_parquet/part-00000-387e06a4-cf9c-4165-974d-15b59ed0d468-c000.snappy.parquet`
+
+**Technologies Used**:
+- PySpark
+- Apache Spark
+- CSV and Parquet file formats
+- Jupyter Notebook
 
 ---
 
