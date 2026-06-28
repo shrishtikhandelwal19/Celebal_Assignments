@@ -17,7 +17,8 @@ It also demonstrates how to save processed output in CSV and Parquet formats.
 ## Project Structure
 ```text
 Assignment-6/
-├── Week6_Assignment.ipynb
+├── spark code
+  |__pyspark codes.ipynb
 ├── sample-superstore.csv
 ├── README.md
 ├── output_csv/
