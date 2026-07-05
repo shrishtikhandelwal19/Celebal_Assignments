@@ -1,4 +1,4 @@
-# Assignment 7: Delta Lake Assignment
+# (7)delta_late_assignment: Delta Lake Assignment
 
 ## Project Overview
 This assignment demonstrates how to use Delta Lake with PySpark in Databricks for data loading, cleaning, storage, and incremental processing.
