@@ -13,8 +13,10 @@ The goal of this project is to learn how to:
 - Validate the final output
 
 ## Folder Structure
+
 delta-lake-assignment/
-│
+
+|
 ├── data/
 │   ├── customer_master.csv
 │   └── customer_incremental.csv
