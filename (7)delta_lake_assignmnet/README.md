@@ -14,8 +14,8 @@ The goal of this project is to learn how to:
 
 ## Folder Structure
 
+```
 delta-lake-assignment/
-
 |
 ├── data/
 │   ├── customer_master.csv
@@ -33,6 +33,8 @@ delta-lake-assignment/
 │   └── final_output/
 │
 └── report/
+
+```
 
 ## Technologies Used
 - PySpark
