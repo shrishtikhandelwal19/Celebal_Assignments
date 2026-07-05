@@ -32,14 +32,14 @@ Each assignment includes complete source code, cleaned datasets, SQL scripts, de
 ```
 Celebal_Assignments/
 │
-├── Assignment1/
+├── (1)Basic_Pandas_Assignmnet/
 │   ├── code.ipynb                          # Jupyter notebook with data analysis code
 │   ├── Combined_dataset.csv                # Combined dataset from multiple sources
 │   ├── final_cleaned_dataset.csv           # Cleaned and processed dataset
 │   ├── summary.txt                         # Summary of findings and insights
 │   └── README.md                           # Assignment-specific documentation
 │
-├── Assignment2/
+├── (2)SQL_Assignmnet/
 │   ├── Brief_Report.txt                    # Executive summary of SQL analysis
 │   ├── README.md                           # Assignment-specific documentation
 │   │
@@ -53,7 +53,7 @@ Celebal_Assignments/
 │       └── screenshots/
 │           └── (Query result screenshots and analysis)
 │
-├── Assignment3/
+├── (3)Subqueries_Assignmnet/
 │   ├── README.md                           # Assignment-specific documentation
 │   ├── brief insights.txt                  # Business insights and analysis summary
 │   ├── sql_script/
@@ -64,14 +64,14 @@ Celebal_Assignments/
 │       ├── superstore_assignment_results.txt
 │       └── task_results.txt
 │
-├── Assignment4/
+├── (4)Azure_Assignmnet/
 │   ├── README.md                           # Azure Data Factory assignment documentation
 │   ├── SUMMARY.md                          # Assignment 4 project summary
 │   ├── mini project screenshots/           # Implementation screenshots
 │   ├── objective screesnhots/              # Objective and architecture screenshots
 │   └── Task screenshots/                   # Pipeline execution and validation screenshots
 │
-├── Assignment-5/
+├── (5)Spark_Assignmnet/
 │   ├── README.md                           # Spark assignment documentation
 │   ├── data/
 │   │   └── sample-superstore.csv           # Superstore dataset for Spark processing
@@ -79,7 +79,7 @@ Celebal_Assignments/
 │   │   └── spark_basics.ipynb              # PySpark notebook for data processing
 │   └── output/
 │       └── results.csv                     # Processed output data
-├── Assignment-6/
+├── (6)Pysaprk_Assignmnet/
 │   ├── README.md                           # Assignment-specific documentation
 │   ├── sample-superstore.csv               # Superstore dataset for Spark processing
 │   ├── spark codes/
@@ -88,12 +88,37 @@ Celebal_Assignments/
 │   │   └── part-00000-c42043bd-49e9-4b80-b04c-e2fe9337cb2f-c000.csv
 │   └── output_parquet/
 │       └── part-00000-387e06a4-cf9c-4165-974d-15b59ed0d468-c000.snappy.parquet
+├── (7)delta_lake_assignmnet/
+│   ├── README.md                           # Delta Lake assignment documentation
+│   ├── data/
+│   │   ├── Customer_Incremnetal.csv
+│   │   └── Customer_master.csv
+│   ├── notebook/
+│   │   └── delta_scd_assignmnet.ipynb
+│   ├── report/
+│   │   └── Delta_Lake_Assignment_Report.md
+│   └── screenshots/
+│       └── (Implementation and validation screenshots)
 └── README.md                               # Main repository documentation (this file)
 ```
 
 ---
 
-## 📊 Assignment 1: Data Analysis & Cleaning
+## � Assignments Overview
+
+| # | Assignment | Focus Area | Technologies |
+|---|---|---|---|
+| 1 | Basic Pandas Assignment | Data analysis and cleaning | Python, Pandas, NumPy, Jupyter |
+| 2 | SQL Sales Data Analysis | SQL-based sales reporting and analysis | SQL, MySQL Workbench, CSV |
+| 3 | Advanced SQL Customer Ranking | Subqueries, CTEs, ranking, and segmentation | SQL, MySQL Workbench |
+| 4 | Azure Data Factory & Metadata Validation | Cloud data movement and validation | Azure, ADF, Blob Storage, IAM |
+| 5 | Spark Data Processing | PySpark data processing pipelines | PySpark, Apache Spark |
+| 6 | PySpark Processing and Output Generation | Spark-based ETL and output generation | PySpark, Spark, Parquet |
+| 7 | Delta Lake Assignment | Delta Lake and SCD implementation | Delta Lake, PySpark, Python |
+
+---
+
+## 📊 (1)Basic_Pandas_Assignmnet: Basic Pandas Assignment
 
 **Objective**: Process and analyze e-commerce shopping app data through data cleaning, preprocessing, and exploratory data analysis.
 
@@ -118,7 +143,7 @@ Celebal_Assignments/
 
 ---
 
-## 📈 Assignment 2: SQL Sales Data Analysis
+## 📈 (2)SQL_Assignmnet: SQL Sales Data Analysis
 
 **Objective**: Comprehensive analysis of e-commerce sales data using the Superstore Kaggle Dataset to derive business intelligence and answer complex analytical queries.
 
@@ -142,7 +167,7 @@ Celebal_Assignments/
 
 ---
 
-## 🧾 Assignment 3: Advanced SQL Customer Ranking
+## 🧾 (3)Subqueries_Assignmnet: Advanced SQL Customer Ranking
 
 **Objective**: Analyze Superstore sales performance by building a normalized SQL dataset and applying advanced query techniques to identify top customers, customer rankings, and revenue insights.
 
@@ -163,17 +188,17 @@ Celebal_Assignments/
 - **Aggregations** for computing totals, averages, and order counts
 
 **Files Included**:
-- `Assignment3/README.md` - Assignment-specific documentation
-- `Assignment3/brief insights.txt` - Analysis summary and insights
-- `Assignment3/sql_script/superstore_assignment_queries.sql`
-- `Assignment3/sql_script/task_queries.sql`
-- `Assignment3/sql_script/superstore_raw.csv`
-- `Assignment3/query results/superstore_assignment_results.txt`
-- `Assignment3/query results/task_results.txt`
+- `(3)Subqueries_AssignmnetREADME.md` - Assignment-specific documentation
+- `(3)Subqueries_Assignmnet/brief insights.txt` - Analysis summary and insights
+- `(3)Subqueries_Assignmnet/sql_script/superstore_assignment_queries.sql`
+- `(3)Subqueries_Assignmnet/sql_script/task_queries.sql`
+- `(3)Subqueries_Assignmnet/sql_script/superstore_raw.csv`
+- `(3)Subqueries_Assignmnet/query results/superstore_assignment_results.txt`
+- `(3)Subqueries_Assignmnet/query results/task_results.txt`
 
 ---
 
-## � Assignment 4: Azure Data Factory & Metadata Validation
+## ☁️ (4)Azure_Assignmnet 4: Azure Data Factory & Metadata Validation
 
 **Objective**: Build an Azure Data Factory pipeline that performs metadata validation and moves data from an Azure Blob Storage source container to a destination container.
 
@@ -192,15 +217,15 @@ Celebal_Assignments/
 - Metadata Validation
 
 **Files Included**:
-- `Assignment4/README.md` - Assignment-specific documentation
-- `Assignment4/SUMMARY.md` - Project summary and outcome
-- `Assignment4/mini project screenshots/` - Visual implementation references
-- `Assignment4/objective screesnhots/` - Architecture and objective screenshots
-- `Assignment4/Task screenshots/` - Pipeline execution and monitoring screenshots
+- `(4)Azure_Assignmnet/README.md` - Assignment-specific documentation
+- `(4)Azure_Assignmnet/SUMMARY.md` - Project summary and outcome
+- `(4)Azure_Assignmnet/mini project screenshots/` - Visual implementation references
+- `(4)Azure_Assignmnet/objective screesnhots/` - Architecture and objective screenshots
+- `(4)Azure_Assignmnet/Task screenshots/` - Pipeline execution and monitoring screenshots
 
 ---
 
-## 🚀 Assignment 5: Spark Data Processing
+## 🚀(5)Spark_Assignmnet: Spark Data Processing
 
 **Objective**: Use PySpark to process the Superstore dataset and build a simple data pipeline.
 
@@ -214,23 +239,23 @@ Celebal_Assignments/
 - Data Processing Pipeline
 
 **Files Included**:
-- `Assignment-5/README.md`
-- `Assignment-5/data/sample-superstore.csv`
-- `Assignment-5/notebook/spark_basics.ipynb`
-- `Assignment-5/output/results.csv`
+- `(5)Spark_Assignmnet/README.md`
+- `(5)Spark_Assignmnet/data/sample-superstore.csv`
+- `(5)Spark_Assignmnet/notebook/spark_basics.ipynb`
+- `(5)Spark_Assignmnet/output/results.csv`
 
 ---
 
-## 🚀 Assignment 6: Spark Data Processing and Output Generation
+## 🚀 (6)Pysaprk_Assignmnet: PySpark Processing and Output Generation
 
 **Objective**: Build and run a PySpark pipeline to process the Superstore dataset, generate clean output files, and explore the data using Spark notebooks.
 
 **Key Deliverables**:
-- ✅ `Assignment-6/README.md`
-- ✅ `Assignment-6/sample-superstore.csv`
-- ✅ `Assignment-6/spark codes/pyspark codes.ipynb`
-- ✅ `Assignment-6/output_csv/part-00000-c42043bd-49e9-4b80-b04c-e2fe9337cb2f-c000.csv`
-- ✅ `Assignment-6/output_parquet/part-00000-387e06a4-cf9c-4165-974d-15b59ed0d468-c000.snappy.parquet`
+- ✅ `(6)Pysaprk_Assignmnet/README.md`
+- ✅ `(6)Pysaprk_Assignmnet/sample-superstore.csv`
+- ✅ `(6)Pysaprk_Assignmnet/spark codes/pyspark codes.ipynb`
+- ✅ `(6)Pysaprk_Assignmnet/output_csv/part-00000-c42043bd-49e9-4b80-b04c-e2fe9337cb2f-c000.csv`
+- ✅ `(6)Pysaprk_Assignmnet/output_parquet/part-00000-387e06a4-cf9c-4165-974d-15b59ed0d468-c000.snappy.parquet`
 
 **Technologies Used**:
 - PySpark
@@ -240,7 +265,35 @@ Celebal_Assignments/
 
 ---
 
-## �🛠️ Tools & Technologies Used
+## 🧠 (7)delta_lake_assignmnet: Delta Lake Assignment
+
+**Objective**: Implement a Delta Lake-based data pipeline with Slowly Changing Dimensions (SCD) logic to manage incremental customer data updates and maintain historical accuracy.
+
+**Key Deliverables**:
+- ✅ Delta Lake notebook for data loading and transformation
+- ✅ Customer master and incremental dataset processing
+- ✅ SCD Type 1 and Type 2 implementation workflow
+- ✅ Validation and reporting outputs for final comparison
+- ✅ Assignment-specific documentation and screenshots
+
+**Technologies Used**:
+- Python
+- PySpark
+- Delta Lake
+- Jupyter Notebook
+- CSV and Parquet-based data processing
+
+**Files Included**:
+- `(7)delta_lake_assignmnet/README.md` - Assignment-specific documentation
+- `(7)delta_lake_assignmnet/data/Customer_master.csv` - Base customer dataset
+- `(7)delta_lake_assignmnet/data/Customer_Incremnetal.csv` - Incremental updates
+- `(7)delta_lake_assignmnet/notebook/delta_scd_assignmnet.ipynb` - Implementation notebook
+- `(7)delta_lake_assignmnet/report/Delta_Lake_Assignment_Report.md` - Summary report
+- `(7)delta_lake_assignmnet/screenshots/` - Validation and output screenshots
+
+---
+
+## 🛠️ Tools & Technologies Used
 
 ### Azure Cloud Services
 - Microsoft Azure for cloud orchestration
@@ -341,6 +394,6 @@ The included datasets, SQL scripts, Jupyter notebooks, screenshots, and reports 
 - Business metrics calculation and analysis
 - Professional reporting and documentation
 
-**Last Updated**: May 31, 2026  
+**Last Updated**: 5 jul, 2026  
 **Status**: Active & Maintained  
 **Type**: Internship Portfolio
