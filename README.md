@@ -13,7 +13,7 @@ This repository showcases practical data analysis and business intelligence skil
 - **SQL Expertise**: Writing complex queries for data extraction and analysis
 - **Database Management**: Working with normalized database structures
 
-Each assignment includes complete source code, cleaned datasets, SQL scripts, detailed reports, and visual documentation through screenshots. Assignment 4 additionally includes Azure Data Factory implementation with metadata validation and cloud pipeline documentation.
+Each assignment includes complete source code, cleaned datasets, SQL scripts, detailed reports, and visual documentation through screenshots. Assignment 4 additionally includes Azure Data Factory implementation with metadata validation and cloud pipeline documentation, while Assignment 8 showcases an end-to-end e-commerce analytics workflow with Python cleaning, SQLite loading, SQL analysis, and CLI reporting.
 
 ---
 
@@ -99,12 +99,34 @@ Celebal_Assignments/
 │   │   └── Delta_Lake_Assignment_Report.md
 │   └── screenshots/
 │       └── (Implementation and validation screenshots)
+│
+├── (8)ecommerce-analytics-system/
+│   ├── README.md                           # E-commerce analytics system documentation
+│   ├── data/
+│   │   ├── raw/                            # Generated raw CSV files
+│   │   └── cleaned/                        # Cleaned CSV outputs
+│   ├── scripts/
+│   │   ├── generate_data.py
+│   │   ├── clean_data.py
+│   │   ├── load_to_db.py
+│   │   ├── report_cli.py
+│   │   └── test_edge_cases.py
+│   ├── sql/
+│   │   ├── schema.sql
+│   │   ├── aggregations.sql
+│   │   ├── window_functions.sql
+│   │   ├── cohort_analysis.sql
+│   │   └── rfm_and_segmentation.sql
+│   └── output/
+│       └── sample_reports/
+│           └── sample_report.md
+│
 └── README.md                               # Main repository documentation (this file)
 ```
 
 ---
 
-## � Assignments Overview
+## 📋 Assignments Overview
 
 | # | Assignment | Focus Area | Technologies |
 |---|---|---|---|
@@ -115,6 +137,7 @@ Celebal_Assignments/
 | 5 | Spark Data Processing | PySpark data processing pipelines | PySpark, Apache Spark |
 | 6 | PySpark Processing and Output Generation | Spark-based ETL and output generation | PySpark, Spark, Parquet |
 | 7 | Delta Lake Assignment | Delta Lake and SCD implementation | Delta Lake, PySpark, Python |
+| 8 | E-Commerce Order Analytics System | End-to-end data cleaning, SQLite loading, SQL analysis, and CLI reporting | Python, Pandas, SQLite, SQL, Faker |
 
 ---
 
@@ -293,7 +316,37 @@ Celebal_Assignments/
 
 ---
 
-## 🛠️ Tools & Technologies Used
+## � (8)ecommerce-analytics-system: E-Commerce Order Analytics System
+
+**Objective**: Build an end-to-end e-commerce analytics mini-system that generates synthetic order data, cleans and validates it, loads it into SQLite, performs SQL-based analysis, and produces business reports through a command-line tool.
+
+**Key Deliverables**:
+- ✅ Synthetic data generation for customers, products, orders, and order items
+- ✅ Data cleaning pipeline with handling of missing values, invalid emails, mixed dates, and duplicate records
+- ✅ SQLite database creation with relational schema and referential integrity
+- ✅ SQL scripts for aggregations, window functions, cohort analysis, and RFM segmentation
+- ✅ CLI-based reporting workflow and edge-case testing scripts
+
+**Technologies Used**:
+- Python
+- Pandas
+- Faker
+- SQLite3
+- SQL
+- Tabulate
+- Argparse
+
+**Files Included**:
+- `(8)ecommerce-analytics-system/README.md` - Project documentation
+- `(8)ecommerce-analytics-system/data/raw/` - Raw generated CSV datasets
+- `(8)ecommerce-analytics-system/data/cleaned/` - Cleaned CSV outputs
+- `(8)ecommerce-analytics-system/sql/` - Schema and analysis SQL scripts
+- `(8)ecommerce-analytics-system/scripts/` - Data generation, cleaning, loading, reporting, and testing scripts
+- `(8)ecommerce-analytics-system/output/sample_reports/sample_report.md` - Sample business report
+
+---
+
+## �🛠️ Tools & Technologies Used
 
 ### Azure Cloud Services
 - Microsoft Azure for cloud orchestration
@@ -395,5 +448,5 @@ The included datasets, SQL scripts, Jupyter notebooks, screenshots, and reports 
 - Professional reporting and documentation
 
 **Last Updated**: 5 jul, 2026  
-**Status**: Active & Maintained  
+**Status**: compeleted 
 **Type**: Internship Portfolio
